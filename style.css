@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+   background: #081b29;
+    color: #ededed;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:#081b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+
+}
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+
+}
+.home{
+    margin-top:180px;
+  
+    left: 0;
+    display: flex;
+    justify-content: left;
+    padding: 20px 10%;
+    
+}
+.home-content{
+    max-width: 600px;
+    
+}
+
+.home-content h1{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content p{
+    font-size: 16px; 
+    margin: 20px 0 40px;
+}
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: dotted;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.btn-box a:nth-child(2) {
+    background: transparent ;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover {
+    
+    color: #081b29;
+}
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+} 
+.btn-box a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#081b29 ;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+.home-sci{
+   position: absolute;  
+ margin-top:400px ;
+
+ bottom: 10px;
+ width: 170px;
+ display: inline-block;
+ justify-content: space-between; 
+}
+.home-sci a {
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent ;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    
+}
+.main-pics{
+    position:absolute;
+    top: 70px;
+    right: 0;
+    border-radius: 20px;
+}
+.about_pic {
+    position:absolute;
+    top: 70px;
+    left: 0;
+    border-radius: 20px;
+
+}
+.main_about {
+    display: block;
+}
+.contact_main a {
+    color: #ededed;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.container img {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    left: 100px;
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.684);
+    transition: all ease-in-out 0.5s;
+}
+
+.container img:hover {
+    width: 10%;
+    height: 10%;
+}
+h1 {
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+    color:#00abf0;
+}
+.about-content p  {
+    display: inline-flex;
+    justify-content: left;
+    color: #ededed;
+    margin-top: 100px;
+    position: relative;
+    max-width: 600px;
+    margin-left: 100px;
+}
+.cont-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    
+    text-align: center; 
+    margin-top: 50px;
+    
+    max-width: 610px;
+    margin-left: 350px;
+    background: #255568;
+    border-radius: 20px;
+   
+}
+.last{
+    
+    max-width: 600px;
+    margin-left: 350px;
+    margin-top: 40px;
+}
+.abb{
+    margin-top: 20px;
+}
+.educational-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    
+    text-align: center; 
+    margin-top: 50px;
+    
+    max-width: 610px;
+    margin-left: 350px;
+    background: #255568;
+    border-radius: 20px;
+}
